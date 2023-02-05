@@ -93,3 +93,26 @@ def dictionary(dict):
     return dict
 print(dictionary(d))
 
+
+_________________________________________________________________________________________________________________
+
+
+#davaleba 1
+import random
+def new_tuple(Tuple):
+    tuple = ()
+    list = [random.randrange(100) for x in range(100)]
+    tuple_0 = ()
+    tuple_1 = ()
+    tuple_2 = ()
+    for i in list:
+        if i % 2 == 0:
+            tuple_0 += (i,)
+        else:
+            tuple_1 += (i,)
+
+    for i in tuple_1:
+        if i % 3 == 0:
+            tuple_2 += (i,)
+    return tuple_0,tuple_1,tuple_2
+print(new_tuple(tuple))
